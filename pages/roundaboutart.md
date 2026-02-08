@@ -30,7 +30,7 @@ Här visas några av verken.
 
 Parti af Svartån med Turbinhuset, IKA 2007
 
-{% include image.html src="/assets/images/content/stilleben.JPG" alt="Stilleben" width="273" height="364" class="twoColFixLtHdr" %}
+{% include image.html src="/assets/images/content/stilleben.JPG" alt="Stilleben" width="273" height="364" %}
 
 {% include image.html src="/assets/images/content/stillebentext.JPG" alt="Stilleben" width="273" height="204" %}
 

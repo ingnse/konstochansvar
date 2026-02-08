@@ -5,15 +5,16 @@ layout: "page"
 permalink: "/jagarlikgiltig/"
 ---
 
-## {% include image.html src="/assets/images/content/trojajagarlikgiltig.JPG" alt="" width="340" height="249" %}
+{% include image.html src="/assets/images/content/trojajagarlikgiltig.JPG" alt="" width="340" height="249" %}
+
 ## Jag är likgiltig för Västerås
 IKA är grundare av kampanjen Jag  är likgiltig för Västerås.
 
-Vi   gläder oss  åt en stad som klarar sig utmärkt utan vår kärlek  och att   det går så bra att trivas i Västerås  utan att känna något för staden.
+Vi gläder oss  åt en stad som klarar sig utmärkt utan vår kärlek och att det går så bra att trivas i Västerås utan att känna något för staden.
 
-Inför kampanjen  har IKA inbjudit Västerås stad till samarbete.  Efter   ett bra möte med representanter för  stadsledningskontoret såg de fördelarna med  kampanjen men valde att   avstå från medverkan.
+Inför kampanjen har IKA inbjudit Västerås stad till samarbete. Efter ett bra möte med representanter för stadsledningskontoret såg de fördelarna med kampanjen men valde att avstå från medverkan.
 
-Vi väljer att gå vidare - för  västeråsarna, tillsammans med alla som   stämmer in  i vårt budskap.
+Vi väljer att gå vidare - för västeråsarna, tillsammans med alla som stämmer in i vårt budskap.
 
 ### Vill du beställa t-tröja?
 Tröjan kostar 100 kronor inklusive moms. Frakt tillkommer enligt postens portotabell. Vid beställning av en tröja är fraktkostnaden 24 kronor.
@@ -30,9 +31,9 @@ En mängd andra produkter med den grafiska profilen kan  beställas [här. >>](h
 ### Vill du ladda ner grafisk profil?
 Vill du göra din egen t-tröja eller på annat sätt visa din likgiltighet för Västerås, kan du ladda ner den grafiska profilen som  PDF eller JPG.
 
-[Ladda ner den grafiska profilen i PDF-format här >>](dokument/Jagarlikgiltigpdf.pdf)
+[Ladda ner den grafiska profilen i PDF-format här >>]({{ '/dokument/Jagarlikgiltigpdf.pdf' | relative_url }})
 
-[Ladda ner den grafiska profilen i JPG-format här >>](dokument/Jagarlikgiltigforvasteras.jpg)
+[Ladda ner den grafiska profilen i JPG-format här >>]({{ '/dokument/Jagarlikgiltigforvasteras.jpg' | relative_url }})
 
 {% include image.html src="/assets/images/content/Jagarlikgiltigforvasteras.jpg" alt="" width="340" height="126" %}
 
