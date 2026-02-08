@@ -5,3 +5,46 @@ layout: default
 <div class="page-content">
 {{ content }}
 </div>
+
+<script>
+(function() {
+    // Wrap each h1 and its following content until the next h1 in a div
+    const pageContent = document.querySelector('.page-content');
+    if (!pageContent) return;
+    
+    const children = Array.from(pageContent.childNodes);
+    const sections = [];
+    let currentSection = null;
+    
+    children.forEach(node => {
+        if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'H1') {
+            // Start a new section
+            if (currentSection) {
+                sections.push(currentSection);
+            }
+            currentSection = document.createElement('div');
+            currentSection.className = 'section-wrapper';
+            currentSection.appendChild(node);
+        } else if (currentSection) {
+            // Add to current section
+            currentSection.appendChild(node);
+        } else {
+            // Content before first h1
+            sections.push(node);
+        }
+    });
+    
+    // Add the last section
+    if (currentSection) {
+        sections.push(currentSection);
+    }
+    
+    // Clear and rebuild only if we found h1 elements
+    if (sections.length > 0 && sections.some(s => s.nodeType === Node.ELEMENT_NODE && s.className === 'section-wrapper')) {
+        pageContent.innerHTML = '';
+        sections.forEach(section => {
+            pageContent.appendChild(section);
+        });
+    }
+})();
+</script>
