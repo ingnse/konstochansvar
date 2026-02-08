@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="page-content">
+    {% if page.image %}
+    <div class="page-hero">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="hero-image">
+    </div>
+    {% endif %}
+    
+    <div class="container">
+        <header class="page-header">
+            <h1 class="page-title">{{ page.title }}</h1>
+            {% if page.description %}
+            <p class="page-description">{{ page.description }}</p>
+            {% endif %}
+        </header>
+        
+        <div class="page-body">
+            {{ content }}
+        </div>
+    </div>
+</article>
+

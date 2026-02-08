@@ -1,0 +1,21 @@
+{% comment %}
+  Image include with optional caption and responsive support
+  
+  Parameters:
+  - src: Image source path (required)
+  - alt: Alt text (required)
+  - caption: Optional caption text
+  - class: Optional CSS class
+  - loading: Loading attribute (lazy/eager, default: lazy)
+{% endcomment %}
+
+<figure class="image-container {% if include.class %}{{ include.class }}{% endif %}">
+    <img src="{{ include.src | relative_url }}" 
+         alt="{{ include.alt }}" 
+         loading="{{ include.loading | default: 'lazy' }}"
+         class="content-image">
+    {% if include.caption %}
+    <figcaption class="image-caption">{{ include.caption }}</figcaption>
+    {% endif %}
+</figure>
+

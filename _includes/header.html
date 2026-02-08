@@ -1,0 +1,21 @@
+<header class="site-header" role="banner">
+    <div class="container">
+        <div class="header-content">
+            <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="{{ site.data.site.name }} - Startsida">
+                <img src="{{ '/assets/images/icons/logo.svg' | relative_url }}" alt="{{ site.data.site.name }}" class="logo-image">
+                <span class="site-name">{{ site.data.site.name }}</span>
+            </a>
+            
+            {% include navigation.html %}
+            
+            <button class="mobile-menu-toggle" aria-label="Öppna meny" aria-expanded="false">
+                <span class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+        </div>
+    </div>
+</header>
+

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="home-page">
+    {% if page.image %}
+    <section class="hero-section">
+        <div class="hero-image-container">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="hero-image">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1 class="hero-title">{{ page.title }}</h1>
+                    {% if page.description %}
+                    <p class="hero-description">{{ page.description }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    
+    <div class="home-content">
+        {{ content }}
+    </div>
+</div>
+

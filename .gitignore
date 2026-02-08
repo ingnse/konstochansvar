@@ -1,0 +1,15 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+bundle/
+Gemfile.lock
+node_modules/
+.DS_Store
+*.log
+*.tmp
+.env
+.idea/
+.vscode/
+

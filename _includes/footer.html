@@ -1,0 +1,49 @@
+<footer class="site-footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">{{ site.data.site.name }}</h3>
+                <p class="footer-tagline">{{ site.data.site.tagline }}</p>
+            </div>
+            
+            {% if site.data.site.contact %}
+            <div class="footer-section">
+                <h4 class="footer-heading">Kontakt</h4>
+                <address class="footer-address">
+                    {% if site.data.site.email %}
+                    <p><a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a></p>
+                    {% endif %}
+                    {% if site.data.site.phone %}
+                    <p><a href="tel:{{ site.data.site.phone }}">{{ site.data.site.phone }}</a></p>
+                    {% endif %}
+                    {% if site.data.site.address %}
+                    <p>{{ site.data.site.address }}</p>
+                    {% endif %}
+                </address>
+            </div>
+            {% endif %}
+            
+            {% if site.data.site.social %}
+            <div class="footer-section">
+                <h4 class="footer-heading">Följ oss</h4>
+                <ul class="social-links">
+                    {% if site.data.site.social.facebook %}
+                    <li><a href="{{ site.data.site.social.facebook }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a></li>
+                    {% endif %}
+                    {% if site.data.site.social.instagram %}
+                    <li><a href="{{ site.data.site.social.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a></li>
+                    {% endif %}
+                    {% if site.data.site.social.linkedin %}
+                    <li><a href="{{ site.data.site.social.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">&copy; {{ 'now' | date: "%Y" }} {{ site.data.site.name }}. Alla rättigheter förbehållna.</p>
+        </div>
+    </div>
+</footer>
+

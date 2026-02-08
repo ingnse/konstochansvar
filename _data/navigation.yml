@@ -1,0 +1,12 @@
+main:
+  - title: "Hem"
+    url: "/"
+  - title: "Om oss"
+    url: "/om-oss/"
+  - title: "Tjänster"
+    url: "/tjanster/"
+  - title: "Portfolio"
+    url: "/portfolio/"
+  - title: "Kontakt"
+    url: "/kontakt/"
+

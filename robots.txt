@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://konstochansvar.se/sitemap.xml
+
