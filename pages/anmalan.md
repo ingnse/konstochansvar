@@ -7,7 +7,7 @@ permalink: "/anmalan/"
 
 # Anmälan
 
-Här anmäler du dig till Det svenska kommunkvisset - de första femtio åren
+Klicka på länken så kommer du till anmälningsformuläret för Det svenska kommunkvisset - de första femtio åren
 
 https://forms.gle/tVorgsPoSkVNnpWg9
 
