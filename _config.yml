@@ -1,7 +1,7 @@
 # Site Settings
 title: "Konst och Ansvar"
 description: "Konstnärliga lösningar med ansvar"
-url: "https://ingnse.github.io" # GitHub Pages base URL
+url: "https://konstochansvar.se" # GitHub Pages base URL
 baseurl: "/" # Repository name for GitHub Pages
 
 # Build Settings
