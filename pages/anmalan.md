@@ -11,5 +11,7 @@ Klicka på länken så kommer du till anmälningsformuläret för Det svenska ko
 <a href="https://forms.gle/tVorgsPoSkVNnpWg9">Klicka här</a>
 
 <a href="https://forms.gle/tVorgsPoSkVNnpWg9">
-{% include image.html src="/assets/images/content/affischkommunkviss.jpg" alt="" class="fltlft" %}
+
+  
+  {% include image.html src="/assets/images/content/affischkommunkviss.jpg" alt="" class="fltlft" %}
 </a>
